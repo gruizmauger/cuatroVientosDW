@@ -1,0 +1,381 @@
+#plantillaGeneral{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header"
+        "logo logo"
+        "nosotros publicidad" 
+        "footer footer";
+    grid-template-columns: auto 250px;
+    grid-template-rows: 60px 100px 4fr 60px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+@media(max-width: 800px){
+    #plantillaGeneral{
+        grid-template-areas:
+            "header header"
+            "logo logo"
+            "nosotros nosotros"
+            "publicidad publicidad"
+            "footer footer";
+        grid-template-rows: 60px 100px 3fr 150px 60px;
+    }
+}
+@media(max-width: 600px){
+    #plantillaGeneral{
+        display: flex;
+        flex-direction: column;
+    }
+}
+header{
+    grid-area: header;
+    background-color: #ced4da;
+    color: #495057;
+    display: grid;
+    align-content: center;
+    width: 97vw;
+    border-radius: 5px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-evenly;
+}
+nav ul li{
+    display: inline;
+    padding: 10px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+nav ul li:hover{
+    background-color: #ff5e5b;
+    border-radius: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#495057;
+}
+nav ul li a:hover{
+    color: white;
+}   
+#logoCuatroVientosIndex{
+    grid-area: logo;
+    display: grid;
+    justify-items: center;
+}
+#imgLogo{
+    width: 60vw;
+}
+#inicio{
+    grid-area: nosotros;
+    text-align: center;
+}
+.publicidad{
+    grid-area: publicidad;
+    text-align: center;
+    background-color: tomato;
+    border-radius: 15px;
+    height: 250px;
+    margin-top: 25px;
+}
+footer{
+    grid-area: footer;
+    text-align: left;
+    width: 98%;
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+    background-color:#CED4DA;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-style: italic ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.paginaPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+    padding: 15px;
+}
+.paginaPrincipalCard1{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.paginaPrincipalCard2{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.paginaPrincipalCard3{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.paginaPrincipalCard4{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+#imgGeneral{
+    border-radius: 15px;
+}
+
+/*CSS de clientes*/
+#plantillaGeneralClientes{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header"
+        "clientes clientes"
+        "footer footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: 60px auto 60px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+@media(max-width: 800px){
+    #plantillaGeneralClientes{
+        grid-template-areas:
+            "header header"
+            "clientes clientes"
+            "footer footer";
+        grid-template-rows: 60px auto 60px;
+    }
+}
+@media(max-width: 600px){
+    #plantillaGeneralClientes{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#clientes{
+    grid-area: clientes;
+    text-align: center;
+}
+.paginaClientes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.paginaClientesCard1{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.paginaClientesCard2{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.paginaClientesCard3{
+    width: 150px;
+    height: 150pxx;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.paginaClientesCard4{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.paginaClientesCard5{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.paginaClientesCard6{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+#imgClientes{
+    border-radius: 15px;
+    width:150px;
+}
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*CSS de contacto*/
+#plantillaGeneralContacto{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header"
+        "contacto contacto"
+        "footer footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: 60px auto 60px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+@media(max-width: 800px){
+    #plantillaGeneralContacto{
+        grid-template-areas:
+            "header header"
+            "contacto contacto"
+            "footer footer";
+        grid-template-rows: 60px auto 60px;
+    }
+}
+@media(max-width: 600px){
+    #plantillaGeneralContacto{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#contacto{
+    grid-area: contacto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*CSS de servicios*/
+#plantillaGeneralServicios{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header"
+        "servicios servicios"
+        "footer footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: 60px auto 60px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+@media(max-width: 800px){
+    #plantillaGeneralServicios{
+        grid-template-areas:
+            "header header"
+            "servicios servicios"
+            "footer footer";
+        grid-template-rows: 60px auto 60px;
+    }
+}
+@media(max-width: 600px){
+    #plantillaGeneralContacto{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#servicios{
+    grid-area: servicios;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.serviciosFlex{
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+    padding: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.serviciosCard1{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: lightgrey;
+    padding: 25px;
+}
+.serviciosCard2{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: lightgrey;
+    padding: 25px;
+}
+.serviciosCard3{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: lightgrey;
+    padding: 25px;
+}
+.serviciosCard4{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: lightgrey;
+    padding: 25px;
+}
+
+/*CSS de nosotros*/
+#plantillaGeneralNosotros{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header"
+        "nosotros nosotros"
+        "footer footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: 60px auto 60px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+@media(max-width: 800px){
+    #plantillaGeneralNosotros{
+        grid-template-areas:
+            "header header"
+            "nosotros nosotros"
+            "footer footer";
+        grid-template-rows: 60px auto 60px;
+    }
+}
+@media(max-width: 600px){
+    #plantillaGeneralNosotros{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#nosotros{
+    grid-area: nosotros;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
